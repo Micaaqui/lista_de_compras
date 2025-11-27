@@ -1,19 +1,22 @@
-# Titulo do projeto
+# Shopping List
 
-Aplicação web de lista de compras para o curso de construção de páginas dinâmicas com JavaScript.
+This is a simple Shopping List web application built for the "Building Dynamic Pages with JavaScript" course.
 
-## 🔨 Funcionalidades do projeto
+## 🔨 Features
 
-A aplicação permite inserir itens em uma lista de forma dinâmica, permitindo a exclusão e edição dos mesmos. Os itens terão o nome e também a data e horário que foram criados. Também é possível selecionar um checkbox para informar que o item foi comprado.
+- Add items dynamically to the shopping list.
+- Edit and delete items.
+- Each item shows its name and the date/time it was created.
+- Mark items as purchased using the checkbox.
 
-![Inserção no campo de digitação do valor ração de gato, após, é clicado no botão de edição, onde é aberto um popup para digitar o novo do nome item, que foi digitado ração de cachorro. Em seguida, é clicado no botão de exclusão, e o item é excluído.](https://imgur.com/isPj7Xf.gif)
+<video src="./assets/video.mp4" poster="./assets/poster.png" autoplay loop muted playsinline style="max-width:100%; height:auto; display:block; margin:0 auto;">
+	Your browser does not support the video tag. You can download the file here: `./assets/video.mp4`.
+</video>
 
-## ✔️ Técnicas e tecnologias utilizadas
+## ✔️ Technologies
 
-As técnicas e tecnologias utilizadas pra isso são:
+The project uses the following technologies:
 
-- `HTML`: criação dos elementos da tela;
-- `CSS`: estilização da aplicação;
-- `JavaScript`: construção de elementos dinâmicos através da manipulação do DOM.
-
-
+- `HTML` — user interface structure
+- `CSS` — visual styling
+- `JavaScript` — dynamic behavior and DOM manipulation
