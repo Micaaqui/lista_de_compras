@@ -96,45 +96,8 @@ form {
     gap: 8px;
 }
 
-.lista-item-container {
-    display: flex;
-    gap: 8px;
-}
-x
 ul {
     list-style-type: none;
-}
-
-.input-checkbox {
-    display: none;
-}
-
-.checkbox-customizado {
-    width: 20px;
-    height: 20px;
-    background-color: var(--neutro);
-    border: 1px solid var(--preto);
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.checked {
-    background-color: var(--preto);
-    position: relative;
-}
-
-.checkbox-customizado.checked::after {
-    content: "";
-    position: absolute;
-    left: 30%;
-    top: -10%;
-    width: 5px;
-    height: 14px;
-
-    border-top: 2px solid var(--neutro);
-    border-left: 2px solid var(--neutro);
-
-    transform: rotate(-140deg);
 }
 
 .texto-data {
@@ -142,11 +105,93 @@ ul {
     line-height: 20px;
 }
 
-.item-lista-button {
-    border: none;
-    background-color: transparent;
-}
-
 .container-lista {
     width: 100%;
+}
+
+/* Estilos para ações (editar / deletar) e edição inline */
+.acoes-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.botao-editar,
+.botao-deletar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    border: none;
+    background: transparent;
+}
+
+.botao-editar {
+    color: var(--cor-secundaria);
+}
+
+.botao-deletar {
+    background: var(--cor-primaria);
+    color: var(--neutro);
+}
+
+.botao-editar:hover,
+.botao-deletar:hover {
+    opacity: 0.9;
+}
+
+/* ícones SVG dentro dos botões */
+.acoes-container button svg,
+.acoes-container button img {
+    width: 18px;
+    height: 18px;
+}
+
+.input-edicao {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.lista-item-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* linha superior: item + ações (ações alinhadas à direita) */
+.linha-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* remover fundo vermelho dos botões de ação (apenas o ícone) */
+.botao-deletar {
+    background: transparent;
+    color: var(--preto);
+}
+
+.botao-deletar:hover {
+    background: rgba(0,0,0,0.04);
+}
+
+.acoes-container {
+    gap: 6px;
 }
